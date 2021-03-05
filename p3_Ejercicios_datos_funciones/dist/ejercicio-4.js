@@ -1,2 +1,3 @@
-function fromSnakeToCamelCase() {
-}
+/*function fromSnakeToCamelCase(){
+
+}*/ 
