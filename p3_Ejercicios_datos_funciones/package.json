@@ -1,0 +1,19 @@
+{
+  "name": "p3_Ejercicios_datos_funciones",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc-watch --onSuccess \"node dist/index.js\"",
+    "doc": "typedoc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^8.3.0",
+    "tsc-watch": "^4.2.9",
+    "typedoc": "^0.20.28"
+  }
+}
