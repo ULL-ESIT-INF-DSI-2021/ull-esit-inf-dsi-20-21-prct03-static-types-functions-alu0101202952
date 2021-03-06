@@ -21,7 +21,7 @@ function isValidUsername(usuario: string){
             return false;  //false
           }
         } else{
-          return false;  //false  //aquí fall
+          return false;  //false
         }
       } else {
         return false;   //false

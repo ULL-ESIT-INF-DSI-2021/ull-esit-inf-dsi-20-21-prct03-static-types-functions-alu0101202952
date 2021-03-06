@@ -1,15 +1,10 @@
 {
- desarrollo
+
 	"folders": [
 		{
 			"path": ".."
 		}
 	]
-=======
-    "folders": [
-        {
-            "path": ".."
-        }
-    ]
- master
+
+
 }
