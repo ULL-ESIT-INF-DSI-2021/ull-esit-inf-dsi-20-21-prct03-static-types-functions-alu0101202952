@@ -1,9 +1,24 @@
 //console.log('Hola Mundo!');
-/**
- * ### Adds two numbers
- * @param year Consists of the **first** operand of the addition
- *
- */
+//###############################################################################
+//EJERCICIO 1
+/*
+function isLeapYear(year : number) {
+  if(year % 4 == 0)
+    return true;
+  else if(year % 100 == 0){
+    if(year % 400 == 0){
+      return true;
+    } else {
+      return false;
+    }
+  } else{
+    return true;
+  }
+}
+  
+const leapYear = isLeapYear(1997);
+console.log(`mySum = ${leapYear}`);
+*/
 //###############################################################################
 //EJERCICIO 2
 //EJERCICIO 2
@@ -87,7 +102,52 @@ console.log(`Muestreo3: ${result3}`);
 let result4 = isValid("2hiii");
 console.log(`Muestreo4: ${result4}`);
 */
-//
+//###############################################################################
+//EJERCICIO 4
+/*
+function fromSnakeToCamelCase(cadenasnake: string){
+  var str ="";
+  var result;
+  for(var i = 0; i < cadenasnake.length; i++){
+    var character=cadenasnake.charAt(i);
+    str += str + character;
+    //console.log(character);
+    if(character == "_"){
+      var indexchange = character.indexOf("_");  //guardamos el índice
+      character.replace("_","S");//lo ignoramos
+      indexchange+1;
+      console.log(str);
+    }
+  }
+}
+
+function fromCamelToSnakeCase(cadenacamel: string){
+  var str ="";
+  var result;
+  for(var i = 0; i < cadenacamel.length; i++){
+    var character=cadenacamel.charAt(i);
+    str += str + character;
+    //console.log(character);
+    if(character == "S"){
+      var indexchange = character.indexOf("S");  //guardamos el índice
+      character.replace("S","_");//lo ignoramos
+      str += str + character;
+      indexchange+1;
+      console.log(str);
+    }
+  }
+}
+
+let cadena_snake = "sample_string";
+console.log(`Cadena: ${cadena_snake}\n`);
+console.log(`fromSnakeToCamelCase: ${fromSnakeToCamelCase(cadena_snake)}\n`);
+console.log(`###################################################\n`);
+
+let cadenaCamel = "sampleString";
+console.log(`Cadena: ${cadenaCamel}\n`);
+console.log(`fromCamelToSnakeCase:  ${fromCamelToSnakeCase(cadenaCamel)}`);
+*/
+//###############################################################################
 //EJERCICIO 5
 /*var cadena = "Beard Jeans Hairbrush Knuckleduster Sand";
 var reemplazo1 = /a/g;
@@ -101,6 +161,7 @@ function onePunch(cadena: string){
 
 console.log(`${cadena} => ${onePunch(cadena)}`);
 */
+//###############################################################################
 //EJERCICIO 6
 /*
 function isValidISBN(cadena: string){
@@ -129,11 +190,11 @@ function isValidISBN(cadena: string){
   }
 }
 
-var ISBN = "3-598-21508-7";
+var ISBN = "3-598-21508-x";
 console.log(`ISBN: ${ISBN}`);
 console.log(`${isValidISBN(ISBN)}`);
 */
-//#########################################################
+//###############################################################################
 //EJERCICIO 7
 /*
 function changeDigit(cifra: number){
@@ -155,7 +216,7 @@ function changeDigit(cifra: number){
 var cifrain = 12;
 console.log(`${changeDigit(12)}`);
 */
-//######################################################################
+//###############################################################################
 //EJERCICIO 9
 /*
 function calcularDaño(ataque: number, efectividad: number){
@@ -265,7 +326,7 @@ console.log(`└───────────────────── 
 console.log(`...\n`);
 console.log(efectividadPokemon(pokemon1,pokemon2,capacidad_ataque1,capacidad_ataque2));
 */
-//##########################################################################
+//###############################################################################
 //EJERCICIO 10
 /*
 function isValidUsername(usuario: string){
