@@ -106,4 +106,4 @@ function calcularDaño(ataque: number, efectividad: number){
   console.log(`└───────────────────── °∘❉∘° ─────────────────────┘\n`);
   console.log(`...\n`);
   console.log(efectividadPokemon(pokemon1,pokemon2,capacidad_ataque1,capacidad_ataque2));
-  */
+ */
