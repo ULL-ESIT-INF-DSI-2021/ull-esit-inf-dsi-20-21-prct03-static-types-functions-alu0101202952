@@ -1,3 +1,4 @@
+//EJERCICIO 6
 /*function isValidISBN(cadena: string){
   var cadenalen: number = 10;
   var valoresAceptados = /^[0-9]+$/;

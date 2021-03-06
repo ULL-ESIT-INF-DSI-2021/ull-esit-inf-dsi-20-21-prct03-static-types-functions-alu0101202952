@@ -1,5 +1,5 @@
+//EJERCICIO 5
 /*
-var cadena = "Beard Jeans Hairbrush Knuckleduster Sand";
 var reemplazo1 = /a/g;
 var reemplazo2 = /e/g;
 
@@ -9,4 +9,5 @@ function onePunch(cadena: string){
   return resultado;
 }
 
+var cadena = "Beard Jeans Hairbrush Knuckleduster Sand";
 console.log(`${cadena} => ${onePunch(cadena)}`);*/

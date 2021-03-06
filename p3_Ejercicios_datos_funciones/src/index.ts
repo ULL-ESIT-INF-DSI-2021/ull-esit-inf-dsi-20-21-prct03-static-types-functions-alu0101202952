@@ -162,7 +162,7 @@ console.log(`fromCamelToSnakeCase:  ${fromCamelToSnakeCase(cadenaCamel)}`);
 
 //###############################################################################
 //EJERCICIO 5
-/*var cadena = "Beard Jeans Hairbrush Knuckleduster Sand";
+/*
 var reemplazo1 = /a/g;
 var reemplazo2 = /e/g;
 
@@ -172,6 +172,7 @@ function onePunch(cadena: string){
   return resultado;
 }
 
+var cadena = "Beard Jeans Hairbrush Knuckleduster Sand";
 console.log(`${cadena} => ${onePunch(cadena)}`);
 */
 
@@ -273,7 +274,6 @@ function ipsInRange(ips1: string, ips2: string){
   } else if(ips1 == "10.0.0.0" && ips2 == "10.0.1.0"){
     console.log(`Rango == 256`);
   }
-
 }
 
 let ips_1 = "10.0.0.0";

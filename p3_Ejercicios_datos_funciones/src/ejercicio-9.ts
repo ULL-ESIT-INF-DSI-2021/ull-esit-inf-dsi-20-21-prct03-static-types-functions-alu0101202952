@@ -1,4 +1,4 @@
-//POKEMON uwu
+//EJERCICIO 9
 /*
 function calcularDaño(ataque: number, efectividad: number){
     var daño:number;
