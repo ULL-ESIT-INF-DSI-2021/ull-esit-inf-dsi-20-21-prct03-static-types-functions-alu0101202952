@@ -62,12 +62,12 @@ Los objetivos en esta práctica tendremos que resolver una serie de ejercicios d
 ▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
 
 
-## Paso previo: Aceptación de tarea de GitHub Classroom
+## PASO PREVIO: ACEPTACIÓN DE TAREA DE GITHUB CLASSROOM
 
 
 Antes de comenzar se nos requiere que aceptemos la tarea asignada en el GitHub Classroom:
 
-![Asignación GitHub Classroom](https://i.imgur.com/JPwjWBt.jpg)
+![Asignación GitHub Classroom](https://i.imgur.com/5TY1Rmu.jpg)
 
 Con ello ya podríamos trabajar en esta práctica.
 
@@ -76,12 +76,30 @@ Con ello ya podríamos trabajar en esta práctica.
 ▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
 
 
-## INSTALACIÓN Y CONFIGURACIÓN DE VISUAL STUDIO CODE
+## ESTRUCTURA BÁSICA DE PROYECTOS
 
 
-Lo primero sería instalar el Visual Studio Code, como yo ya lo tenía simplemente lo ejecuté poniendo en la terminal :
+Lo primero sería estructurar el workspace de nuestra práctica siguiendo algunos pasos indicados en :
 
-> `$code .`
+> - [Estrutura](https://ull-esit-inf-dsi-2021.github.io/typescript-theory/typescript-project-setup.html)
+
+
+Para ello creo el directorio donde empezaremos a estructurar los directorios y ejercicios, además de configurar el **package.json**, quedando el package.json tal que:
+
+![package.json](https://i.imgur.com/EVHNhZV.jpg)
+
+También necesitamos crear a partir de este el **tsconfig.json** con la ruta de localización de los ejercicios.ts, en el directorio `./src` y sus ejecutables .js en el directorio `./dist`, tal que:
+
+![tsconfig.json](https://i.imgur.com/KuKqur7.jpg)
+
+
+Automáticamente, o manualmente, se crearía ambos directorios donde trabajaremos. Quedando la primera estructura básica de la forma:
+
+![Estructura básica](https://i.imgur.com/9u30DB6.jpg)
+
+
+
+
 
 ### CONFIGURACIÓN DE VISUAL STUDIO CODE PARA CONECTARSE A UNA MÁQUINA REMOTA POR SSH
 
