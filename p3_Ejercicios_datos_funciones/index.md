@@ -143,6 +143,20 @@ Esto quedaría tal que:
 ![Typedoc configuracion package.json](https://i.imgur.com/pgYBgQ5.jpg)
 
 
+Ya tendríamos la documentación en el directorio `./doc` para ejecutarla serviría con el comando ´npm run doc´ como antes especificamos:
+
+![npm run doc](https://i.imgur.com/VDJ6hiu.jpg)
+
+Esto genera documentación pero a partir de comentarios de TypeScript del estilo `/** */` con esta forma especificando la función, los parámetros, lo que devuelve, los snippet quedaría tal que:
+
+![Tipo de comentarios](https://i.imgur.com/HnRBdK0.jpg)
+
+Esto guardaría esos comentarios en forma de página HTML para la documentación, tendríamos que ir al fichero `index.html` en el directorio de `./modules`, y con el click derecho pinchar sobre la opción de: __Open with Live Server__ y así generaría una página HTML con los comentarios en forma de documentación, como:
+
+![TypeDoc final HTML](https://i.imgur.com/dCZG30B.jpg)
+
+Finalizando así la documentación con Typedoc.
+
 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━✧❂✧━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -156,7 +170,11 @@ Esto quedaría tal que:
 ▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
 
 
-## PRIMER PROYECTO EN TYPESCRIPT: "HOLA MUNDO"
+## EJERCICIOS EN TYPESCRIPT CON TYPEDOC
+
+En este apartado nombraremos en qué consisten los ejercicios pues los encontramos alojados en el repositorio en:
+
+- [Ejercicios Práctica 3]()
 
 En primer lugar instalamos la extensión obligatoria de **ESLint**, esta nos permite realizar comprobaciones de estilo sobre ficheros que incluyan código fuente en JavaScript y TypeScript.
 
