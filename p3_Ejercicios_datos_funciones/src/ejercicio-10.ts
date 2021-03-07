@@ -1,5 +1,12 @@
-//EJERCICIO 10
-/*
+/**
+ * ### EJERCICIO 10:
+ * #### ¿En qué consiste?
+ * Programa que comprueba la validez de un nombre de usuario según unos criterios
+ * @param usuario Consiste en el nombre de usuario que le pasamos para validar
+ * @return `true` Si es válido 
+ * @return `false` Si  **NO** es válido
+ * 
+ */
 function isValidUsername(usuario: string){
     var valoresAceptados = /^[0-9]+$/;
     var letrasAceptadas = /^[a-z]+^[A-Z]+$/; //Expresion regular, que contenga minúsculas y mayúsculas
@@ -29,6 +36,12 @@ function isValidUsername(usuario: string){
     }
   }
   
+/**
+ * ```typescript
+ * user_in = "hola";
+ * @return `false`
+ * ```
+ */
   let user_in = "hola";
   console.log(isValidUsername(user_in));
-  */
+  
