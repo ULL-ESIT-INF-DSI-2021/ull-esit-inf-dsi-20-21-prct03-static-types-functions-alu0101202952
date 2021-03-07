@@ -1,7 +1,7 @@
 # Informe Práctica 3: Tipos de datos estáticos y funciones (Primeros ejercicios en TypeScript)
 
 
-![Image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.positronx.io%2Fintroduction-to-typescript-and-how-does-it-work%2F&psig=AOvVaw0ob1Nxs9I4czpX-5Ufgy10&ust=1615219468865000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMD1sMjHnu8CFQAAAAAdAAAAABAD)
+![Image](https://i.imgur.com/FGyMult.png)
 
 
 
@@ -98,69 +98,26 @@ Automáticamente, o manualmente, se crearía ambos directorios donde trabajaremo
 ![Estructura básica](https://i.imgur.com/9u30DB6.jpg)
 
 
+Tras la estructura básica nos dedicaremos a trabajar en el directorio `./src` donde alojaremos los ficheros correspondientes a los ejercicios que se nos plantea en esta práctica
 
 
 
-### CONFIGURACIÓN DE VISUAL STUDIO CODE PARA CONECTARSE A UNA MÁQUINA REMOTA POR SSH
-
-El siguiente paso será como su nombre indica poder conectarse desde el VSC a una máquina remota, en mi caso, la máquina con host: _iaas-dsi31_
-Previamente y cómo se sabe tenemos que conectarnos a la VPN de la Universidad de La Laguna:
-
-![VPN](https://i.imgur.com/w4WhqxN.jpg)
-
-A continuación pulsando la tecla > `F1` estando en el VSC se abriría una barra con opciones de conexión remota, y pincharíamos sobre > `Remote-SSH: Connect to Host...`, como se puede ver veríamos distintos Host pero como queremos añadir el host de nuestra máquina virtual, tendríamos que pinchar sobre > `Configure SSH Hosts...` y con ello añadir el host de la máquina remota **iaas-dsi31**:
-
-![Connect to Host](https://i.imgur.com/YGGx7Wy.jpg)
-
-Veríamos el fichero donde debemos añadir el host > `~/.ssh/config`:
-
-![~/.ssh/config](https://i.imgur.com/7SQWUlO.jpg)
-
-Añadiendo así las líneas, líneas 16, 17 y 18 del archivo de la siguiente imagen:
-
-![SSH Config](https://i.imgur.com/wT9STZO.jpg)
-
-Con > `Ctrl + S` guardamos los cambios, pulsamos de nuevo la tecla > `F1`, en la opción > `Remote-SSH: Connect to Host...` encontraríamos así el host de nuestra máquina si la hemos configurado bien:
-
-![Connect to iaas-dis31](https://i.imgur.com/5TFrqYr.jpg)
-
-Al pinchar sobre el host **iaas-dsi31** entraría en remoto con mi MV si no hubiese ningún inconveniente. Como todo fue satisfactorio, lo siguiente fue comprobar que en efecto nos encontramos en nuestra máquina virtual, para ello en el panel superior abrimos una nueva terminal o con la combinación > `Ctrl + Shift + ñ`, y en dicha terminal ponemos `hostname` para corroborar que estamos en la máquina virtual desde VSC:
-
-![Hostname](https://i.imgur.com/sFZgwtS.jpg)
-
-Así observamos que se conectó corectamente.
+▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
 
 
-### SESIONES COLABORATIVA CON VISUAL STUDIO LIVE SHARE
+## PRIMEROS PASOS DE CONFIGURACIÓN CON TYPEDOC
+
+Como en esta práctica era opcional realizar la documentación con **Typedoc**, pero en otras prácticas posteriores si se me iban a pedir, decidí iniciarme en esta práctica en el manejo de la documentación mediante Typedoc. Para conocer más sobre esta herramienta consultar [Typedoc](https://typedoc.org/), gracias a la información de dicha página web,  la explicación en clase y el video de instalación y configuración de este he conseguido tener la documentación de mi práctica, la cual enseñaré más adelante, se localiza en el directori o `./doc` y cuya documentación presento tanto en el apartado **OBJETIVOS** de este informe y a continuación:
+
+> - [Informe documentación en Typedoc](http://127.0.0.1:5500/p3_Ejercicios_datos_funciones/docs/index.html)
 
 
-Visual Studio Live Share permite colaborar en las tareas de desarrollo en tiempo real, y para usarlo necesitamos instalar su paquete de extensiones junto con todas las extensiones recomendadas que se puede encontrar al final del siguiente sitio Web:
 
-『 』[Live Share Extension Pack](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack)
 
-Instalando así las extensiones recomendadas y las propias del pack de Live Share:
-
-![Extension recomendada 1](https://i.imgur.com/DwZajTg.jpg)
-
-![Extension recomendada 2](https://i.imgur.com/2CTgmiu.jpg)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━✧❂✧━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Estas extensiones las instalamos tanto en nuestra máquina local como remota, quedando guardadas todas las extensiones:
 
-![Extension pack](https://i.imgur.com/T49IKDV.jpg)
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━✧❂✧━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Cuando ya están todas las extensiones instaladas las podemos probar siguiendo los pasos de la página anterior nombrada. Para finalizar, VSC con Lve Share pide vincularte con nuestra cuenta de GitHub:
-
-![Vincular extensiones](https://i.imgur.com/gXT1980.jpg)
-
-Probando buscar participantes:
-
-![Participantes](https://i.imgur.com/mKFBhhA.jpg)
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━✧❂✧━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 
 
