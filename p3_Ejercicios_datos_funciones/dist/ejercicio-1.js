@@ -1,6 +1,8 @@
 /**
  * ###
- * @param year Consists of the year that we want to know if is a Leap Year
+ * @param year Consiste en el año que pasaremos a la función para ver si es bisiesto
+ * @return true Si el año es bisiesto
+ * @return false Si el año **NO** es bisiesto
  *
  */
 /*

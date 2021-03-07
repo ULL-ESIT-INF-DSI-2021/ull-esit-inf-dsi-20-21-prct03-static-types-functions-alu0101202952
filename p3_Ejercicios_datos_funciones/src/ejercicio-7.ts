@@ -1,5 +1,12 @@
-//EJERCICIO 7
-/*
+/**
+ * ### EJERCICIO 7:
+ * #### ¿En qué consiste?
+ * El programa recibe como parámetro un entero positivo y devuelve el siguiente número mayor que pueda ser formado al reposicionar sus dígitos.
+ * @param cifra Consiste en el número con mínimo dos dígitos para poder reposicionar dichos dígitos entre sí
+ * @return `resultado` El número siguiente mayor que puede ser formado al reposicionar los dígitos de `cifra`.
+ * 
+ */
+
 function changeDigit(cifra: number){
   var change= cifra.toString(); //trabajamos con strings
   var auxstr = [];
@@ -16,6 +23,11 @@ function changeDigit(cifra: number){
   }
 }
 
+/**
+ * ```typescript
+ * cifrain = 12;
+ * @return `21`
+ * ```
+ */
 var cifrain = 12;
 console.log(`${changeDigit(12)}`);
-*/
