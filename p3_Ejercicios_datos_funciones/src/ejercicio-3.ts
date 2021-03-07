@@ -33,6 +33,22 @@ function isValid(cadena: string){
   }
 }
 
+/**
+ * ```typescript
+ * 
+ * result1 = isValid("2hi")
+ * @return `true`
+ * 
+ * result2 = isValid("5hello")
+ * @return `true`
+ * 
+ * result3 = isValid("2hi3")
+ * @return `false`
+ * 
+ * result4 = isValid("2hiii")
+ * @return `false`
+ * ```
+ */
 let result1 = isValid("2hi");
 console.log(`Muestreo1: ${result1}`);
 
