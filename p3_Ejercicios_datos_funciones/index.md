@@ -1,4 +1,4 @@
-# Informe Práctica 3: Tipos de datos estáticos y funciones (Primeros ejercicios en TypeScript)
+# Informe Práctica 3: Tipos de datos estáticos y funciones (Primeros ejercicios en TypeScript y Typedoc)
 
 
 ![Image](https://i.imgur.com/FGyMult.png)
@@ -8,7 +8,7 @@
 ╔═══════════════════════════════════════════════════════════════════╗
 
 > - Autora: Andrea Calero Caro > [alu0101202952@ull.edu.es](alu0101202952@ull.edu.es)
-> - Práctica 3: Tipos de datos estáticos y funciones (Primeros ejercicios en TypeScript)
+> - Práctica 3: Tipos de datos estáticos y funciones (Primeros ejercicios en TypeScript y Typedoc)
 > - Asignatura: Desarrollo de Sistemas Informáticos
 > - Universidad de La Laguna
 
@@ -97,6 +97,10 @@ Automáticamente, o manualmente, se crearía ambos directorios donde trabajaremo
 
 ![Estructura básica](https://i.imgur.com/9u30DB6.jpg)
 
+También necesitaremos una compilación con control automático de cambios que instalaremos con el comando `npm install --save-dev tsc-watch`, tal que:
+
+![Compilacion control de cambios automáticos](https://i.imgur.com/7Ip0IWk.jpg)
+
 
 Tras la estructura básica nos dedicaremos a trabajar en el directorio `./src` donde alojaremos los ficheros correspondientes a los ejercicios que se nos plantea en esta práctica
 
@@ -112,10 +116,38 @@ Como en esta práctica era opcional realizar la documentación con **Typedoc**, 
 > - [Informe documentación en Typedoc](http://127.0.0.1:5500/p3_Ejercicios_datos_funciones/docs/index.html)
 
 
+Primero para ello necesitaremos instalar Typedoc así como sus dependencias para ello la opción `--save-dev`, quedando:
+
+![Instalación de Typedoc](https://i.imgur.com/q8cER6s.jpg)
+
+Con ello podemos ver que se ha creado un directorio, que es como organizará typedoc la documentación que es por módulos, creando así `./node_modules`:
+
+![./node_modules](https://i.imgur.com/QzCbxpd.jpg)
+
+
+Continuaremos con la configuración para poder usar Typedoc, primero si no se ha creado por defecto crear el **typedoc.json**, al cual le añadimos: 
+
+![typedoc.json](https://i.imgur.com/oiYEcex.jpg)
+
+Como observamos en `"entryPoints" :[]` pondremos la ruta de los ficheros sobre los cuales haremos su documentación. Y en el apartado `"out: "` pondremos el directorio donde se alojará toda esa documentación. Tras guardar dicha configuración se genereará automáticamente el directorio `./doc`.
+
+Pero para poder usar la herramienta necesitamos invocarla con un comando, dicho comando será: `npm run [nombre_invocación]`, el nombre de invocación es lo siguiente que configuraremos en el **package.json**, para ello pondremos en la parte de scripts del fichero:
+
+> `"doc": "typedoc"`
+
+- **doc**: será el nombre con el que ejecutaremos la herramienta
+- **typedoc**: la herramienta que lleva la documentación de la práctica
+
+Esto quedaría tal que:
+
+![Typedoc configuracion package.json](https://i.imgur.com/pgYBgQ5.jpg)
+
 
 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━✧❂✧━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
 
 
 
