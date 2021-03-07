@@ -30,8 +30,3 @@ function isLeapYear(year : number) {
 
 const leapYear = isLeapYear(1997);
 console.log(`is = ${leapYear}`);
-
-
-//TEMA MINIMALISTA DEL DOCUMENTO
-//typedoc --theme <default|minimal|path/to/theme>
-//../assets/js/search.js
