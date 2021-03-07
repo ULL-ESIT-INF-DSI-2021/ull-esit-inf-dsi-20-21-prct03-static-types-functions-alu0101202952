@@ -174,75 +174,65 @@ Finalizando así la documentación con Typedoc.
 
 En este apartado nombraremos en qué consisten los ejercicios pues los encontramos alojados en el repositorio en:
 
-- [Ejercicios Práctica 3]()
+- [Ejercicios Práctica 3](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct03-static-types-functions-alu0101202952/tree/desarrollo/p3_Ejercicios_datos_funciones)
 
-En primer lugar instalamos la extensión obligatoria de **ESLint**, esta nos permite realizar comprobaciones de estilo sobre ficheros que incluyan código fuente en JavaScript y TypeScript.
+A continuación explicaré en qué consiste cada uno de los ejercicios con mi documentación de Typedoc
 
-A continuación abrimos una Nueva Terminal, en VSC dentro de la conexión SSH con mi máquina virtual, en la barra superior de tareas o con la combinación > `Ctrl + Shift + ñ`. Y procederemos a instalar el compilador de TypeScript, y veremos la versión en la que se encuentra con el comando > `tsc --version` tal que:
-
-![Instalar compilador de TypeScript](https://i.imgur.com/j1JDNYP.jpg)
-
-Y en la terminal comprobamos la ruta en la que estamos situados con > `pwd` y creamos el directorio hello-world, en el que trabajaremos para crear nuestro primer programa de **"Hola Mundo"**
-
-Como ya sabemos tendremos primero que clonar el repositorio asignado en la tarea de GitHub Classroom con > `git clone [enlace]` y trabajaremos desde el repo, por tanto, comenzaremos con > `git init` para trabajar en la rama.
-
-Y ya podríamos hacerlo:
-
-![mkdir hello-world](https://i.imgur.com/jZOyq1d.jpg)
-
-Veríamos a su vez cómo se creó dicho directorio y los permisos, tal que:
-
-![Permisos](https://i.imgur.com/cYgy3Ou.jpg)
-
-Para trabajar de forma eficiente creamos un espacio de trabajo en la opción > `Add Folder to Workspace...`, puse un nombre por defecto asociado al directorio de **hello-world** y lo guardé con > `Save Workspace As...`. A continuación, creo un fichero dentro del directorio con el nombre de  **tsconfig.json** esto lo hago desde la terminal con el comando `touch`, y le añadimos las líneas:
-
-> `{
->  "compilerOptions": {
->    "target": "ES2018",
->    "outDir": "./dist",
->    "rootDir": "./src",
->    "module": "CommonJS"
->  }
->}`
-
-Con ello configuraríamos cómo se compilaría el código de TypeScript, quedando:
-
-![Crear tsconfig.json](https://i.imgur.com/ncNThAE.jpg)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━✧❂✧━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 
-Procederemos creando otro fichero **index.ts** que será necesario para la implementación del código de "Hola Mundo" a compilar, para que quede organizado y como se especificó en el código anterior del fichero **tsconfig.json**("rootDir": "./src"), quedando:
+### EJERCICIO 1
 
-![Src directorio,index.ts](https://i.imgur.com/3sznxD3.jpg)
+/**
+ * ### EJERCICIO 1:
+ * #### ¿En qué consiste?
+ * Pasas al programa un año y si cumple las condiciones establecidas te dirá si el año es bisiesto o no
+ * @param year Consiste en el año que pasaremos a la función para ver si es bisiesto
+ * @return `true` Si el año es bisiesto 
+ * @return `false` Si el año **NO** es bisiesto
+ * 
+ */
+ 
+ 
+ /**
+ * ```typescript
+ * leapYear = isLeapYear(1997)
+ * @return `false`
+ * ```
+ */
 
-Creándose así satisfactoriamente el fichero.
 
-Ahora rellenamos el fichero **index.ts** con el código que imprimirá por pantalla el "Hola Mundo", tal que:
-
-![Código Hola Mundo](https://i.imgur.com/FfHtaAZ.jpg)
-
-Y lo compilamos con el comando > `tsc`, esto compilará el código en un .js que se denotará como **index.js** y que se alojará en el directorio **./dist**, tal y como se especificó en el fichero **tsconfig.json** ("outDir": "./dist"), el directorio dist se crearía sin nosotros haberlo creado manualmente:
-
-![Creacion index.js y directorio ./dist](https://i.imgur.com/5zDEPvR.jpg)
-
-Ahora comprobaremos si entre ambos ficheros existe diferencia y para ello hacemos, con el comando > `diff` :
-
-![Diff comando](https://i.imgur.com/IlkFYJE.jpg)
-
-Analizando la imagen en mi caso detecta diferencia entre en la línea > `let myString: string = "Hola Mundo";` y la línea > `let myString = "Hola Mundo";`. Además, por error mío detecta un error más porque en el fichero **.ts** hay un espacio más al final del código, esto nos da a ver que el comando detecta todo tipo de diferencias, como si es de tener una línea más en blanco:
-
-![diff](https://i.imgur.com/fOSQzk3.jpg)
-
-Una vez que ya tenemos el código compilado sería hora de ejecutarlo con el comando > `node`, quedando de la manera:
-
-![Node](https://i.imgur.com/EZBjxxW.jpg)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━✧❂✧━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Comprobando así que se ejecuta perfectamente.
 
-Damos por concluída la práctica hacemos un **commit** con el comando: > `git add .` y luego con > `git commit -m` y así guardamos los cambios del proceso. Por último subimos los cambios con > `git push -u origin master` y así tenerlos en el repositorio GitHub.
+### EJERCICIO 2
+
+/**
+ * ### EJERCICIO 2:
+ * #### ¿En qué consiste?
+ * Dos funciones, una te convierte el decimal en notación factorial y la otra el factorial en notación decimal
+ * ##### FUNCIÓN `decimalToFactorial`
+ * @param ndecimal Consiste en el decimal que pasaremos a la función para convertirlo en su notación factorial
+ * @return `factorial` correspondiente
+ * ##### FUNCIÓN `maxfactorial`
+ * @param ndecimal Consiste en el decimal que pasaremos a la función para encontrar el máximo factorial por el que se puede dividir
+ * @return `factorialrecursive` el factorial correspondiente de llamar a la función recursiva que calcula los factoriales
+ * ##### FUNCIÓN `factorialrecursive`
+ * @param nfactorial Consiste en el factorial que pasaremos a la función para encontrar su resultado
+ * @return `nfactorial * factorialrecursive (nfactorial-1)` el factorial correspondiente 
+ */
+
+
+/**
+ * ```typescript
+ * resultado = decimalToFactorial(463)
+ * @return 341010
+ * ```
+ */
+
+
 
 
 ▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
