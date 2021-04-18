@@ -7,6 +7,7 @@
  * @return `false` Si **NO** es válida la cadena según dichas reglas
  * 
  */
+/*
 function isValid(cadena: string){
   var valoresAceptados = /^[0-9]+$/;
   var letrasAceptadas =  /^[a-z]+$/;
@@ -49,6 +50,7 @@ function isValid(cadena: string){
  * @return `false`
  * ```
  */
+/*
 let result1 = isValid("2hi");
 console.log(`Muestreo1: ${result1}`);
 
@@ -59,4 +61,4 @@ let result3 = isValid("2hi3");
 console.log(`Muestreo3: ${result3}`);
 
 let result4 = isValid("2hiii");
-console.log(`Muestreo4: ${result4}`);
+console.log(`Muestreo4: ${result4}`);*/

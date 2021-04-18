@@ -7,6 +7,7 @@
  * @return `false` Si  **NO** es válido
  * 
  */
+/*
 function isValidUsername(usuario: string){
     var valoresAceptados = /^[0-9]+$/;
     var letrasAceptadas = /^[a-z]+^[A-Z]+$/; //Expresion regular, que contenga minúsculas y mayúsculas
@@ -42,6 +43,7 @@ function isValidUsername(usuario: string){
  * @return `false`
  * ```
  */
+/*
   let user_in = "hola";
   console.log(isValidUsername(user_in));
-  
+  */

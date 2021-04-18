@@ -1,8 +1,10 @@
 /**
- * ###
+ * ### EJERCICIO 1:
+ * #### ¿En qué consiste?
+ * Pasas al programa un año y si cumple las condiciones establecidas te dirá si el año es bisiesto o no
  * @param year Consiste en el año que pasaremos a la función para ver si es bisiesto
- * @return true Si el año es bisiesto
- * @return false Si el año **NO** es bisiesto
+ * @return `true` Si el año es bisiesto
+ * @return `false` Si el año **NO** es bisiesto
  *
  */
 /*
@@ -19,7 +21,13 @@ function isLeapYear(year : number) {
     return true;
   }
 }
-  
-  const leapYear = isLeapYear(1997);
-  console.log(`mySum = ${leapYear}`);
-  */ 
+/**
+ * ```typescript
+ * leapYear = isLeapYear(1997)
+ * @return `false`
+ * ```
+ */
+/*
+const leapYear = isLeapYear(1997);
+console.log(`is = ${leapYear}`);
+*/

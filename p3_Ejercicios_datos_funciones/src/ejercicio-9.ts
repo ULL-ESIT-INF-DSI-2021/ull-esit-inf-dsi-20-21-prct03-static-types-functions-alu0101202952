@@ -14,7 +14,7 @@
  * @return `daño` con la fórmula, teniendo la defensa predefinida a _204_, como estándar, el ataque y la efectividad se calcula el daño que hace el pokemon.
  * 
  */
-
+/*
 function calcularDaño(ataque: number, efectividad: number){
     var daño:number;
     var defensa:number = 204;
@@ -109,7 +109,7 @@ function calcularDaño(ataque: number, efectividad: number){
     console.log(`Daño que realiza el equipo rival: ${dañoPoke2}`);
     
   }
-  
+  */
 /**
  * ```typescript
  * pokemon1 = "eléctrico";
@@ -120,6 +120,7 @@ function calcularDaño(ataque: number, efectividad: number){
  * @return `Daño que realiza el equipo rival: ${dañoPoke2}`
  * ```
  */
+/*
   let pokemon1 = "eléctrico";
   let pokemon2 = "agua";
   let capacidad_ataque1 = 100;
@@ -131,4 +132,4 @@ function calcularDaño(ataque: number, efectividad: number){
   console.log(`└───────────────────── °∘❉∘° ─────────────────────┘\n`);
   console.log(`...\n`);
   console.log(efectividadPokemon(pokemon1,pokemon2,capacidad_ataque1,capacidad_ataque2));
- 
+ */

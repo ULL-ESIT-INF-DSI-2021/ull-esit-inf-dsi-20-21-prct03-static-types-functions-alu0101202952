@@ -7,7 +7,7 @@
  * @return `resultado` El rango que sale de la diferencia entre la `ips2`(ip con rango mayor) y `ips1`(ip con rango menor)
  * 
  */
-
+/*
 function ipsInRange(ips1: string, ips2: string){
   var addr1 = parseInt(ips1);
   var addr2 = parseInt(ips2);
@@ -50,6 +50,8 @@ function ipsInRange(ips1: string, ips2: string){
  * @return `Rango == 50`
  * ```
  */
+/*
 let ips_1 = "10.0.0.0";
 let ips_2 = "10.0.0.50";
 console.log(ipsInRange(ips_1, ips_2));
+*/

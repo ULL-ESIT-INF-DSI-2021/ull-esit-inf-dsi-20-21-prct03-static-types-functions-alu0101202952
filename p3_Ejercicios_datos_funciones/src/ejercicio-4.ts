@@ -10,7 +10,7 @@
  * @return cadenasnake la cadena correspondiente pero con el patrón **SnakeCase**
  * 
  */
-
+/*
 function fromSnakeToCamelCase(cadenasnake: string){
   var str ="";
   var result;
@@ -42,7 +42,7 @@ function fromCamelToSnakeCase(cadenacamel: string){
       console.log(str);
     }
   }
-}
+}*/
 
 /**
  * ```typescript
@@ -54,6 +54,7 @@ function fromCamelToSnakeCase(cadenacamel: string){
  * @return `sample_string`
  * ```
  */
+/*
 let cadena_snake = "sample_string";
 console.log(`Cadena: ${cadena_snake}\n`);
 console.log(`fromSnakeToCamelCase: ${fromSnakeToCamelCase(cadena_snake)}\n`);
@@ -62,3 +63,4 @@ console.log(`###################################################\n`);
 let cadenaCamel = "sampleString";
 console.log(`Cadena: ${cadenaCamel}\n`);
 console.log(`fromCamelToSnakeCase:  ${fromCamelToSnakeCase(cadenaCamel)}`);
+*/

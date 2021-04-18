@@ -7,7 +7,7 @@
  * @return `false` Si el año **NO** es bisiesto
  * 
  */
-
+/*
 function isLeapYear(year : number) {
   if(year % 4 == 0)
     return true;
@@ -27,6 +27,7 @@ function isLeapYear(year : number) {
  * @return `false`
  * ```
  */
-
+/*
 const leapYear = isLeapYear(1997);
 console.log(`is = ${leapYear}`);
+*/

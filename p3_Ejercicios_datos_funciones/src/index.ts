@@ -1,15 +1,6 @@
 //console.log('Hola Mundo!');
 //###############################################################################
 //EJERCICIO 1
-/**
- * ### EJERCICIO 1:
- * #### ¿En qué consiste?
- * 
- * @param year Consiste en el año que pasaremos a la función para ver si es bisiesto
- * @return `true` Si el año es bisiesto 
- * @return `false` Si el año **NO** es bisiesto
- * 
- */
 /*function isLeapYear(year : number) {
   if(year % 4 == 0)
     return true;
@@ -292,7 +283,7 @@ console.log(ipsInRange(ips_1, ips_2));
 
 //###############################################################################
 //EJERCICIO 9
-/*
+
 function calcularDaño(ataque: number, efectividad: number){
   var daño:number;
   var defensa:number = 204;
@@ -389,8 +380,8 @@ function efectividadPokemon(tipo1: string, tipo2: string, ataque1: number, ataqu
 }
 
 let pokemon1 = "eléctrico";
-let pokemon2 = "agua";
-let capacidad_ataque1 = 100;
+let pokemon2 = "fuego";
+let capacidad_ataque1 = 180;
 let capacidad_ataque2 = 160;
 console.log(`Tipo de tu pokemon:  ${pokemon1},  Ataque = ${capacidad_ataque1}`);
 console.log(`Tipo del pokemon rival:  ${pokemon2},  Ataque = ${capacidad_ataque2}\n`);
@@ -399,7 +390,7 @@ console.log(`\t\t       FIGHT\n`);
 console.log(`└───────────────────── °∘❉∘° ─────────────────────┘\n`);
 console.log(`...\n`);
 console.log(efectividadPokemon(pokemon1,pokemon2,capacidad_ataque1,capacidad_ataque2));
-*/
+
 
 
 

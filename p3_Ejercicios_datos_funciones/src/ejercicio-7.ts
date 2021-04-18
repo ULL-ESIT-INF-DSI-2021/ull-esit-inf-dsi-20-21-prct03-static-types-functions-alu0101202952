@@ -6,7 +6,7 @@
  * @return `resultado` El número siguiente mayor que puede ser formado al reposicionar los dígitos de `cifra`.
  * 
  */
-
+/*
 function changeDigit(cifra: number){
   var change= cifra.toString(); //trabajamos con strings
   var auxstr = [];
@@ -28,6 +28,6 @@ function changeDigit(cifra: number){
  * cifrain = 12;
  * @return `21`
  * ```
- */
+ *//*
 var cifrain = 12;
-console.log(`${changeDigit(12)}`);
+console.log(`${changeDigit(12)}`);*/

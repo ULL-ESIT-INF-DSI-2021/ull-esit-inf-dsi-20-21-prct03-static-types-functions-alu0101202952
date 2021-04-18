@@ -15,18 +15,19 @@ var reemplazo1 = /a/g;
  * @param reemplazo2 Es una expresión regular a la cual se le han eliminado las e's, con el flag `g` conseguimos que se repita en toda la cadena que se lee
  */
 var reemplazo2 = /e/g;
-
+/*
 function onePunch(cadena: string){
   var resultado = cadena.replace(reemplazo1, '');
   resultado = resultado.replace(reemplazo2,'');
   return resultado;
 }
-
+*/
 /**
  * ```typescript
  * cadena = "Beard Jeans Hairbrush Knuckleduster Sand"
  * @return `=> Brd Hirbrush Jns Knuckldustr Snd`
  * ```
  */
+/*
 var cadena = "Beard Jeans Hairbrush Knuckleduster Sand";
-console.log(`${cadena} => ${onePunch(cadena)}`);
+console.log(`${cadena} => ${onePunch(cadena)}`);*/

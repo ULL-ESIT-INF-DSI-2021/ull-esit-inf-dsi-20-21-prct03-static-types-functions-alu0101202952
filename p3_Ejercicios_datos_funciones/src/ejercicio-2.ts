@@ -12,6 +12,7 @@
  * @param nfactorial Consiste en el factorial que pasaremos a la función para encontrar su resultado
  * @return `nfactorial * factorialrecursive (nfactorial-1)` el factorial correspondiente 
  */
+/*
 function decimalToFactorial(ndecimal : number): any{
   do{
     for(var i = 0; ;i++){
@@ -27,7 +28,7 @@ function decimalToFactorial(ndecimal : number): any{
   } while(maxfactorial)
 }
 
-
+/*
 function maxfactorial(ndecimal: number){
   do {
     for(var i = 0; ;i++){
@@ -40,15 +41,16 @@ function maxfactorial(ndecimal: number){
     }
   } while(factorialrecursive)//recorremos cada factorial
   /** @return maxfactorial de usar la factorial recursivo */
-}
-
+/*}
+*/
+/*
 //Funcion calcular el factorial funciona
 function factorialrecursive(nfactorial: number): any {
   if (nfactorial == 0){ 
     return 1; 
   }
   return nfactorial * factorialrecursive (nfactorial-1); 
-}
+}*/
 
 /**
  * ```typescript
@@ -56,5 +58,6 @@ function factorialrecursive(nfactorial: number): any {
  * @return 341010
  * ```
  */
+/*
 let resultado = decimalToFactorial(463);
-console.log(`El número factorial es: ${resultado}` );
+console.log(`El número factorial es: ${resultado}` );*/

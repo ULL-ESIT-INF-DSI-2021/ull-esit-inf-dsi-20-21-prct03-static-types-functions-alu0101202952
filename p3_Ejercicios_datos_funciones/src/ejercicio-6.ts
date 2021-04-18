@@ -7,7 +7,7 @@
  * @return `false` Si el ISBN **NO** cumple las reglas, es decir, es válido
  * 
  */
-
+/*
 function isValidISBN(cadena: string){
   var cadenalen: number = 10;
   var valoresAceptados = /^[0-9]+$/;
@@ -33,14 +33,15 @@ function isValidISBN(cadena: string){
     return console.log(false);
   }
 }
-
+*/
 /**
  * ```typescript
  * ISBN = "3-598-21508-7";
  * @return `false`
  * ```
  */
+/*
 var ISBN = "3-598-21508-7";
 console.log(`ISBN: ${ISBN}`);
-console.log(`${isValidISBN(ISBN)}`);
+console.log(`${isValidISBN(ISBN)}`);*/
 
