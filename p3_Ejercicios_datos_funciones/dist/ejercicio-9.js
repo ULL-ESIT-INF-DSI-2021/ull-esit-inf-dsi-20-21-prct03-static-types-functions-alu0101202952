@@ -1,4 +1,19 @@
-//POKEMON uwu
+/**
+ * ### EJERCICIO 9:
+ * #### ¿En qué consiste?
+ * Pasas al programa el tipo de tu pokemon, el tipo del pokemon rival, la capacidad de ataque de tu pokemon y la capacidad de ataque del pokemon rival y te saca cuanto daño haces tu y cuanto daño te hace el rival con la fórmula del daño de la función adicional `calcularDaño`
+ * #### FUNCIÓN **efectividadPokemon**
+ * @param tipo1 Consiste en el tipo de tu pokemon (fuego|agua|hierba|eléctrico)
+ * @param tipo2 Consiste en el tipo del pokemon rival (fuego|agua|hierba|eléctrico)
+ * @param ataque1 Consiste en la capacidad de ataque de tu pokemon
+ * @param ataque2 Consiste en la capacidad de ataque del pokemon rival
+ * @return `efectividad1` y `efectividad2` Consiste en las efectividades del tipo del pokemon tuyo y el pokemon rival, respectivamente
+ * #### FUNCIÓN **calcularDaño**
+ * @param ataque Recibe el ataque del tipo
+ * @param efectividad Recibe la efectividad
+ * @return `daño` con la fórmula, teniendo la defensa predefinida a _204_, como estándar, el ataque y la efectividad se calcula el daño que hace el pokemon.
+ *
+ */
 /*
 function calcularDaño(ataque: number, efectividad: number){
     var daño:number;
@@ -94,7 +109,18 @@ function calcularDaño(ataque: number, efectividad: number){
     console.log(`Daño que realiza el equipo rival: ${dañoPoke2}`);
     
   }
-  
+  */
+/**
+ * ```typescript
+ * pokemon1 = "eléctrico";
+ * pokemon2 = "agua";
+ * capacidad_ataque1 = 100;
+ * capacidad_ataque2 = 160;
+ * @return `Daño que causa tu equipo Pokemon: ${dañoPoke1}`
+ * @return `Daño que realiza el equipo rival: ${dañoPoke2}`
+ * ```
+ */
+/*
   let pokemon1 = "eléctrico";
   let pokemon2 = "agua";
   let capacidad_ataque1 = 100;
@@ -106,4 +132,4 @@ function calcularDaño(ataque: number, efectividad: number){
   console.log(`└───────────────────── °∘❉∘° ─────────────────────┘\n`);
   console.log(`...\n`);
   console.log(efectividadPokemon(pokemon1,pokemon2,capacidad_ataque1,capacidad_ataque2));
-  */ 
+ */ 

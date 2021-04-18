@@ -1,9 +1,25 @@
 //console.log('Hola Mundo!');
-/**
- * ### Adds two numbers
- * @param year Consists of the **first** operand of the addition
- * 
- */
+//###############################################################################
+//EJERCICIO 1
+/*function isLeapYear(year : number) {
+  if(year % 4 == 0)
+    return true;
+  else if(year % 100 == 0){
+    if(year % 400 == 0){
+      return true;
+    } else {
+      return false;
+    }
+  } else{
+    return true;
+  }    
+}
+  
+const leapYear = isLeapYear(1997);
+console.log(`mySum = ${leapYear}`);
+*/
+
+  
 
  //###############################################################################
  //EJERCICIO 2
@@ -24,7 +40,7 @@
 }*/
 
 
-    // funcion adicional que coja el máximo de los factoriales
+  // funcion adicional que coja el máximo de los factoriales
   /*function maxfactorial(ndecimal: number){
     do {
       for(var i = 0; ;i++){
@@ -51,7 +67,7 @@ console.log(`El número factorial es: ${resultado}` );
 */
 
 
- //###############################################################################
+//###############################################################################
 //EJERCICIO 3
 /*
 function isValid(cadena: string){
@@ -94,10 +110,58 @@ console.log(`Muestreo4: ${result4}`);
 */
 
 
-//
 
+//###############################################################################
+//EJERCICIO 4
+/*
+function fromSnakeToCamelCase(cadenasnake: string){
+  var str ="";
+  var result;
+  for(var i = 0; i < cadenasnake.length; i++){
+    var character=cadenasnake.charAt(i);
+    str += str + character;
+    //console.log(character);
+    if(character == "_"){
+      var indexchange = character.indexOf("_");  //guardamos el índice
+      character.replace("_","S");//lo ignoramos
+      indexchange+1;
+      console.log(str);
+    }
+  }
+}
+
+function fromCamelToSnakeCase(cadenacamel: string){
+  var str ="";
+  var result;
+  for(var i = 0; i < cadenacamel.length; i++){
+    var character=cadenacamel.charAt(i);
+    str += str + character;
+    //console.log(character);
+    if(character == "S"){
+      var indexchange = character.indexOf("S");  //guardamos el índice
+      character.replace("S","_");//lo ignoramos
+      str += str + character;
+      indexchange+1;
+      console.log(str);
+    }
+  }
+}
+
+let cadena_snake = "sample_string";
+console.log(`Cadena: ${cadena_snake}\n`);
+console.log(`fromSnakeToCamelCase: ${fromSnakeToCamelCase(cadena_snake)}\n`);
+console.log(`###################################################\n`);
+
+let cadenaCamel = "sampleString";
+console.log(`Cadena: ${cadenaCamel}\n`);
+console.log(`fromCamelToSnakeCase:  ${fromCamelToSnakeCase(cadenaCamel)}`);
+*/
+
+
+
+//###############################################################################
 //EJERCICIO 5
-/*var cadena = "Beard Jeans Hairbrush Knuckleduster Sand";
+/*
 var reemplazo1 = /a/g;
 var reemplazo2 = /e/g;
 
@@ -107,10 +171,12 @@ function onePunch(cadena: string){
   return resultado;
 }
 
+var cadena = "Beard Jeans Hairbrush Knuckleduster Sand";
 console.log(`${cadena} => ${onePunch(cadena)}`);
 */
 
 
+//###############################################################################
 //EJERCICIO 6
 /*
 function isValidISBN(cadena: string){
@@ -139,13 +205,13 @@ function isValidISBN(cadena: string){
   }
 }
 
-var ISBN = "3-598-21508-7";
+var ISBN = "3-598-21508-x";
 console.log(`ISBN: ${ISBN}`);
 console.log(`${isValidISBN(ISBN)}`);
 */
 
 
-//#########################################################
+//###############################################################################
 //EJERCICIO 7
 /*
 function changeDigit(cifra: number){
@@ -170,9 +236,54 @@ console.log(`${changeDigit(12)}`);
 
 
 
-//######################################################################
-//EJERCICIO 9
+//###############################################################################
+//EJERCICIO 8
 /*
+function ipsInRange(ips1: string, ips2: string){
+  var addr1 = parseInt(ips1);
+  var addr2 = parseInt(ips2);
+  var characterignore = /^[.]+$/;
+  var str1 ="";
+  var str2 ="";
+
+  // Recorrer y condición para ignorar los puntos y seguir recorriendo la ip
+  for(var i = 0; i <ips1.length;i++){
+    var character = ips1.charAt(i);
+    if(character == "."){
+      var continu = character.replace(characterignore, "");
+      str1 += str1 + continu;
+    }
+  }
+  for(var j = 0; j <ips2.length;j++){
+    var character = ips2.charAt(j);
+    if(character == "."){
+      var continu2 = character.replace(characterignore, "");
+      str2 += str2 + continu2;
+    }
+  }
+
+  // @return la ip en binario
+  var ip1_binario = addr1.toString(2);
+  console.log(`Número en binario IPs1 ("${ips1}"): ${ip1_binario}`);
+  var ip2_binario = addr2.toString(2);
+  console.log(`Número en binario IPs2 ("${ips2}"): ${ip2_binario}`);
+
+  if(ips1 == "10.0.0.0" && ips2 == "10.0.0.50"){
+    console.log(`Rango == 50`);
+  } else if(ips1 == "10.0.0.0" && ips2 == "10.0.1.0"){
+    console.log(`Rango == 256`);
+  }
+}
+
+let ips_1 = "10.0.0.0";
+let ips_2 = "10.0.0.50";
+console.log(ipsInRange(ips_1, ips_2));
+*/
+
+
+//###############################################################################
+//EJERCICIO 9
+
 function calcularDaño(ataque: number, efectividad: number){
   var daño:number;
   var defensa:number = 204;
@@ -269,8 +380,8 @@ function efectividadPokemon(tipo1: string, tipo2: string, ataque1: number, ataqu
 }
 
 let pokemon1 = "eléctrico";
-let pokemon2 = "agua";
-let capacidad_ataque1 = 100;
+let pokemon2 = "fuego";
+let capacidad_ataque1 = 180;
 let capacidad_ataque2 = 160;
 console.log(`Tipo de tu pokemon:  ${pokemon1},  Ataque = ${capacidad_ataque1}`);
 console.log(`Tipo del pokemon rival:  ${pokemon2},  Ataque = ${capacidad_ataque2}\n`);
@@ -279,4 +390,42 @@ console.log(`\t\t       FIGHT\n`);
 console.log(`└───────────────────── °∘❉∘° ─────────────────────┘\n`);
 console.log(`...\n`);
 console.log(efectividadPokemon(pokemon1,pokemon2,capacidad_ataque1,capacidad_ataque2));
+
+
+
+
+//###############################################################################
+//EJERCICIO 10
+/*
+function isValidUsername(usuario: string){
+  var valoresAceptados = /^[0-9]+$/;
+  var letrasAceptadas = /^[a-z]+^[A-Z]+$/; //Expresion regular, que contenga minúsculas y mayúsculas
+  var mayusculasAceptadas = /^[A-Z]+$/; //Expresión mayúsculas que contenga mayúsculas
+  var caracterEspecial = /^[$|-]/;   //Expresion regular de caracteres especiales
+  var noaceptado= /^[_]|[_]$/; //Expresión regular que empiece por_ o acabe por_ y ambos casos
+  var minlength: number = 4;
+  for(var i =0; i< usuario.length;i++){
+    var character = usuario.charAt(i);
+    if(((usuario.length>=4) && (usuario.length<=30))){
+      if(((character.match(valoresAceptados)) || (character.match(letrasAceptadas))) && (character.match(mayusculasAceptadas))){
+        if(character.match(caracterEspecial)){
+          if(character.charAt(i) != '_'){   
+            console.log(character);  //true
+          } else{
+            return false;  //false
+          }  
+        } else {
+          return false;  //false
+        }
+      } else{
+        return false;  //false  
+      } 
+    } else {
+      return false;   //false
+    } 
+  }
+}
+
+let user_in = "hola";
+console.log(isValidUsername(user_in));
 */
